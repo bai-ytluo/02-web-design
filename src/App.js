@@ -1,7 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react'; 
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './AppRoutes'; 
 
-function App() {
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <AppRoutes />
+      </Router>
+    )
+  }
+};
+
+export default App; 
+
+
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -23,3 +37,4 @@ function App() {
 }
 
 export default App;
+ */
